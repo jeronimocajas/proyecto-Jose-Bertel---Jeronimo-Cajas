@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gradiente Geométrico Decreciente - Valor de la Cuota n-ésima</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gradiente Geométrico Decreciente - Valor de la Cuota n-ésima</h1>
+    </header>
+    <main>
+        <section id="calculadora">
+            <h2>Calcular Valor de la Cuota n-ésima (Cn)</h2>
+            <form id="calculadora-form">
+                <label for="payment">Pago Periódico (A):</label>
+                <input type="number" id="payment" required>
+                
+                <label for="growth-rate">Tasa de Crecimiento (j):</label>
+                <input type="number" id="growth-rate" step="0.01" required>
+                
+                <label for="period">Número de la Cuota (n):</label>
+                <input type="number" id="period" required>
+                
+                <button type="button" onclick="calcularCn()">Calcular</button>
+            </form>
+            <p id="result"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Calculadora Financiera</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

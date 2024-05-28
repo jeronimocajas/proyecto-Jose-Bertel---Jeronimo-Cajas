@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series Uniformes - Curso de Ingenieria Economica</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="../index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Teoria
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Teoria</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="series-uniformes.html">Series Uniformes</a></li>
+                            <li><a class="dropdown-item" href="series-variables.html">Series Variables</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../ejercicios.html">Ejercicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../startbootstrap-agency-gh-pages-master/index.html">MOOC</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container main">
+        <h1>Series Uniformes</h1>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="definicion-tab" data-bs-toggle="tab" data-bs-target="#definicion"
+                    type="button" role="tab" aria-controls="definicion" aria-selected="true">Qué son y para qué
+                    sirven</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="valorpresente-tab" data-bs-toggle="tab" data-bs-target="#valorpresente"
+                    type="button" role="tab" aria-controls="valorpresente" aria-selected="true">Calcular el Valor
+                    Presente</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="valorfuturo-tab" data-bs-toggle="tab" data-bs-target="#valorfuturo"
+                    type="button" role="tab" aria-controls="valorfuturo" aria-selected="false">Calcular el Valor
+                    Futuro</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="valorcuotaigualperiodica-tab" data-bs-toggle="tab"
+                    data-bs-target="#valorcuotaigualperiodica" type="button" role="tab"
+                    aria-controls="valorcuotaigualperiodica" aria-selected="false">Calcular el Valor de la cuota
+                    igual y periódica</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="calcularnumeropagotiemonegacion-tab" data-bs-toggle="tab"
+                    data-bs-target="#calcularnumeropagotiemonegacion" type="button" role="tab"
+                    aria-controls="calcularnumeropagotiemonegacion" aria-selected="false">Calcular el número de
+                    pagos o tiempo de negociación</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="calculartasainteres-tab" data-bs-toggle="tab"
+                    data-bs-target="#calculartasainteres" type="button" role="tab" aria-controls="calculartasainteres"
+                    aria-selected="false">Calcular la tasa de interés</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" href="../../assets/downloads/7 Series Uniformes o Anualidades.pdf">Repositorio de clase</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="definicion" role="tabpanel" aria-labelledby="definicion-tab">
+                <h4>Qué son y para qué sirven</h4>
+                <p>Las series uniformes, también conocidas como anualidades, son una serie de pagos iguales y
+                    periódicos.
+                    Son útiles para calcular préstamos, rentas y ahorros.</p>
+            </div>
+            <div class="tab-pane fade" id="valorpresente" role="tabpanel" aria-labelledby="valorpresente-tab">
+                <h4>Calcular el Valor Presente</h4>
+                <h4><small>Valor Presente (VP) de una serie uniforme:</small></h4>
+                <p>VP = A * [(1 - (1 + i)^-n) / i]</p>
+                <p><b>Donde:</b></p>
+                <ul>
+                    <li>A: Monto de la cuota periódica</li>
+                    <li>i: Tasa de interés por período</li>
+                    <li>n: Número total de períodos</li>
+                </ul>
+                <h4><small>Ejemplo de Valor Presente:</small></h4>
+                <p>Supongamos que recibes $1,000 anualmente durante 5 años con una tasa de interés del 5% anual. El
+                    valor
+                    presente se calcula como:</p>
+                <p>VP = 1000 * [(1 - (1 + 0.05)^-5) / 0.05] ≈ $4,329.48</p>
+            </div>
+            <div class="tab-pane fade" id="valorfuturo" role="tabpanel" aria-labelledby="valorfuturo-tab">
+                <h4>Calcular el Valor Futuro</h4>
+                <h4><small>Valor Futuro (VF) de una serie uniforme:</small></h4>
+                <p>VF = A * [((1 + i)^n - 1) / i]</p>
+                <p><b>Donde:</b></p>
+                <ul>
+                    <li>A: Monto de la cuota periódica</li>
+                    <li>i: Tasa de interés por período</li>
+                    <li>n: Número total de períodos</li>
+                </ul>
+                <h4><small>Ejemplo de Valor Futuro:</small></h4>
+                <p>Si inviertes $1,000 anualmente durante 5 años con una tasa de interés del 5% anual, el valor
+                    futuro se
+                    calcula como:</p>
+                <p>VF = 1000 * [((1 + 0.05)^5 - 1) / 0.05] ≈ $5,525.63</p>
+            </div>
+            <div class="tab-pane fade" id="valorcuotaigualperiodica" role="tabpanel"
+                aria-labelledby="valorcuotaigualperiodica-tab">
+                <h4>Calcular el Valor de la cuota igual y periódica</h4>
+                <h4><small>Valor de la cuota igual y periódica (A):</small></h4>
+                <p>A = VP * [i / (1 - (1 + i)^-n)]</p>
+                <p><b>Donde:</b></p>
+                <ul>
+                    <li>VP: Valor presente</li>
+                    <li>i: Tasa de interés por período</li>
+                    <li>n: Número total de períodos</li>
+                </ul>
+                <h4><small>Ejemplo de la cuota igual y periódica:</small></h4>
+                <p>Para un préstamo de $5,000 a 5 años con una tasa de interés del 5% anual, la cuota periódica se
+                    calcula
+                    como:</p>
+                <p>A = 5000 * [0.05 / (1 - (1 + 0.05)^-5)] ≈ $1,133.09</p>
+            </div>
+            <div class="tab-pane fade" id="calcularnumeropagotiemonegacion" role="tabpanel"
+                aria-labelledby="calcularnumeropagotiemonegacion-tab">
+                <h4>Calcular el número de pagos o tiempo de negociación</h4>
+                <h4><small>Número de pagos (n):</small></h4>
+                <p>n = log[(VF * i / A) + 1] / log(1 + i)</p>
+                <p><b>Donde:</b></p>
+                <ul>
+                    <li>VF: Valor futuro</li>
+                    <li>i: Tasa de interés por período</li>
+                    <li>A: Monto de la cuota periódica</li>
+                </ul>
+                <h4><small>Ejemplo del número de pagos:</small></h4>
+                <p>Si el valor futuro deseado es $5,525.63, la cuota es $1,000 y la tasa de interés es del 5%, el
+                    número de
+                    pagos se calcula como:</p>
+                <p>n = log[(5525.63 * 0.05 / 1000) + 1] / log(1 + 0.05) ≈ 5</p>
+            </div>
+            <div class="tab-pane fade" id="calculartasainteres" role="tabpanel"
+                aria-labelledby="calculartasainteres-tab">
+                <h4>Calcular la tasa de interés</h4>
+                <h4><small>Tasa de interés (i):</small></h4>
+                <p>Esta fórmula es más compleja y generalmente se resuelve usando métodos numéricos o software
+                    financiero.
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Curso de Ingenieria Economica</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

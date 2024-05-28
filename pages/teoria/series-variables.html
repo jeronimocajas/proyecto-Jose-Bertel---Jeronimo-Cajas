@@ -1,0 +1,126 @@
+</html>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series Variables - Curso de Ingenieria Economica</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="../index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Teoria
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Teoria</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="series-uniformes.html">Series Uniformes</a></li>
+                            <li><a class="dropdown-item" href="series-variables.html">Series Variables</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../ejercicios.html">Ejercicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../startbootstrap-agency-gh-pages-master/index.html">MOOC</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container main">
+        <h1>Series Variables</h1>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="definicion-tab" data-bs-toggle="tab" data-bs-target="#definicion"
+                    type="button" role="tab" aria-controls="definicion" aria-selected="true">Gradiente Lineal
+                    Creciente</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="valorpresenteserievariable-tab" data-bs-toggle="tab"
+                    data-bs-target="#valorpresenteserievariable" type="button" role="tab"
+                    aria-controls="valorpresenteserievariable" aria-selected="false">Gradiente Lineal
+                    Decreciente</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="valorfuturoserievariable-tab" data-bs-toggle="tab"
+                    data-bs-target="#valorfuturoserievariable" type="button" role="tab"
+                    aria-controls="valorfuturoserievariable" aria-selected="false">Gradiente Geometrico
+                    Creciente</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="cuotacrecremental-tab" data-bs-toggle="tab"
+                    data-bs-target="#cuotacrecremental" type="button" role="tab" aria-controls="cuotacrecremental"
+                    aria-selected="false">Gradiente Geometrico Decreciente</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" href="../../assets/downloads/8 Series Variables o Gradientes.pdf">Repositorio de
+                    clase</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="definicion" role="tabpanel" aria-labelledby="definicion-tab">
+                <p>Definición:</p>
+                <p>Un gradiente lineal creciente es una serie de pagos o flujos de caja que aumentan en una cantidad
+                    constante en cada período.</p>
+
+                <p>Fórmulas:</p>
+                <img style="width: 25em;" src="formulas/formulasgradientelinealcreciente.png" alt="">
+            </div>
+            <div class="tab-pane fade" id="valorpresenteserievariable" role="tabpanel"
+                aria-labelledby="valorpresenteserievariable-tab">
+                <p>Definición:</p>
+                <p>Un gradiente lineal decreciente es una serie de pagos o flujos de caja que disminuyen en una cantidad
+                    constante en cada período.</p>
+
+                <p>Fórmulas:</p>
+                <img style="width: 25em;" src="formulas/formulasgradientelinealdecreciente.png" alt="">
+            </div>
+            <div class="tab-pane fade" id="valorfuturoserievariable" role="tabpanel"
+                aria-labelledby="valorfuturoserievariable-tab">
+                <p>Definición:</p>
+                <p>Un gradiente geométrico creciente es una serie de pagos o flujos de caja que aumentan en un porcentaje constante cada período.</p>
+
+                <p>Fórmulas:</p>
+                <img style="width: 25em;" src="formulas/formulasgradientegeometricocreciente.png" alt="">
+            </div>
+            <div class="tab-pane fade" id="cuotacrecremental" role="tabpanel" aria-labelledby="cuotacrecremental-tab">
+                <p>Definición:</p>
+                <p>Un gradiente geométrico decreciente es una serie de pagos o flujos de caja que disminuyen en un porcentaje constante cada período.</p>
+                
+                <p>Fórmulas:</p>
+                <img style="width: 25em;" src="formulas/formulasgradientegeometricodecreciente.png" alt="">
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Curso de Ingenieria Economica</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
